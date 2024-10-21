@@ -28,7 +28,7 @@ def main():
     print("Number of workers = ", num_workers)
 
     # Directories to save data
-    CUR_DIR = os.path.dirname(os.path.realpath(__file__))
+    CUR_DIR = os.getcwd()
     save_dir = os.path.join(CUR_DIR, "OG-PHL-Example")
     base_dir = os.path.join(save_dir, "OUTPUT_BASELINE")
     reform_dir = os.path.join(save_dir, "OUTPUT_REFORM")
